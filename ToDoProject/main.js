@@ -1,7 +1,3 @@
-  
-import Hikes from "./hiking-start.js";
+import Todo from './todo.js'
 
-const hikes = new Hikes('hikes');
-window.addEventListener('load', function() {
-  hikes.showHikeList();
-});
+const myTodo = new Todo();
