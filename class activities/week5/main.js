@@ -1,4 +1,3 @@
-  
 import Hikes from "./hiking-start.js";
 
 const hikes = new Hikes('hikes');
