@@ -1,28 +1,42 @@
 // default exports
-import { bindTouch } from './utilities.js'
+import {
+    bindTouch
+} from './utilities.js'
 
-function saveTodo(toDo) {
-console.log('saved', toDo)
+let toDoList = [];
+
+function saveTodo(toDoList) {
+    console.log('saved', toDoList)
+
 }
 
 export default class Todo {
-    
+
     constructor() {
         bindTouch('#newTodoButton', this.addNewTodo.bind(this));
     }
 
-    listTodos() {}
+    listTodos() {
+        let listItem = document.getElementById('List');
+        toDoList.forEach(function(item){listItem.appendChild(buildTodo(item))})
+        
+
+    }
+
+   
 
     addNewTodo() {
-        // get todo text
-        let li = document.createElement('li')
-        const todoText = document.querySelector('#newTodo');
-        console.log(li);
-       
-        // const inputValue = document.getElementById("myInput").value;
+        let txtVal = document.getElementById('newTodo').value;
+        const newTodo = {
+            id: new Date(),
+            value: txtVal,
+            completed: false
+        }
+
+        toDoList.push(newTodo);
 
         //save to data store
-        saveTodo(todoText.value);
+        saveTodo(newTodo);
 
         // list todos
         this.listTodos();
@@ -32,4 +46,12 @@ export default class Todo {
 
     completeTodo() {}
 
+}
+function buildTodo(todo) {
+    let li = document.createElement('li');
+    li.classList.add('items');
+    li.innerHTML = `<p>${todo.value}</p> <span><img class="decisionIcon"
+    src="https://img.icons8.com/dotty/80/000000/delete.png"><img class="decisionIcon"
+    src="https://img.icons8.com/carbon-copy/100/000000/checkmark.png"></span>`
+    return li;
 }

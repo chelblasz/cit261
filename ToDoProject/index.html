@@ -1,17 +1,39 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Todo List</title>
+    <a href="https://icons8.com/icon/42429/dotted"></a>
+    <a href="https://icons8.com/icon/67449/checkmark"></a>
     <link rel="stylesheet" href="todo.css">
     <script src="main.js" type="module"></script>
+
 </head>
-<body>
-    <main>
-        <h1>To Do list</h1>
-        <ul id="newTodo"></ul>
-      </main>
-    <input id="newTodo" placeholder="My Todo is..."/><button id="newTodoButton">+</button>
+
+<body class="body">
+    <main class="container">
+        <h1 class="form-label">To Do list</h1>
+        <input id="newTodo" placeholder="My Todo is..." required />
+        <button id="newTodoButton">+</button>
+
+        <p class="completedLabel">Completed<span class="clearCompleted"> clear</span></p>
+        <ul id="completedList">
+            <p placeholder="completed tasks here..."></p>
+        </ul>
+        <p class="completedLabel">In Progress</p>
+        <ul id="List">
+            <li class="items">    
+                <p> games with my kids</p><span><img id="deleteTask" class="decisionIcon"
+                        src="https://img.icons8.com/dotty/80/000000/delete.png"><img id="completedTask" class="decisionIcon"
+                        src="https://img.icons8.com/carbon-copy/100/000000/checkmark.png"></span>
+            </li>
+        </ul>
+
+
+        <p id="addedTxt"></p>
+    </main>
 </body>
+
 </html>
