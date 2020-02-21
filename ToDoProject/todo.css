@@ -1,88 +1,103 @@
 @import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
 
 .body {
-    background-color: #00b8e6;
-    min-height: 70vh;
-    padding: 1rem;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: hsl(198, 1%, 29%);
-    font-family: 'Gochi Hand', cursive;
-    text-align: center;
-    font-size: 130%;  
-  }
+  background-color: #00b8e6;
+  min-height: 70vh;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(198, 1%, 29%);
+  font-family: 'Gochi Hand', cursive;
+  text-align: center;
+  font-size: 130%;
+}
 
-  .form-label {
-background-color: #a6edff;
-width: 350px;
-height: 100px;
-margin: 10px;
-border-radius: 30px;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 60px;
-  }
+.form-label {
+  background-color: #a6edff;
+  width: 350px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+}
 
-  .container {
-    width: 100%;
-    height: auto;
-    min-height: 600px;
-    max-width: 400px;
-    min-width: 250px;
-    background: #f1f5f8;
-    /* background-image: radial-gradient(#bfc0c1 7.2%, transparent 0); */
-    background-size: 25px 25px;
-    border-radius: 20px;
-    box-shadow: 4px 3px 7px 2px #00000040;
-    padding: 1rem;
-    box-sizing: border-box;
-  }
+.container {
+  width: 100%;
+  height: auto;
+  min-height: 600px;
+  max-width: 400px;
+  min-width: 250px;
+  background: #f1f5f8;
+  /* background-image: radial-gradient(#bfc0c1 7.2%, transparent 0); */
+  background-size: 25px 25px;
+  border-radius: 20px;
+  box-shadow: 4px 3px 7px 2px #00000040;
+  padding: 1rem;
+  box-sizing: border-box;
+}
 
 #newTodo {
-background-color: #b4f0ff;
-border-color: #89e7ff;
-border: #f1f5f8;
-border-radius: 20px;
-padding: 12px;
-width: 250px;
-height: 20px;
-margin: 20px;
+  background-color: #b4f0ff;
+  border-color: #89e7ff;
+  border: #f1f5f8;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  height: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* margin: 10px; */
 }
 
 #newTodoButton {
-    background-color: #00b8e6;
+  background-color: #606161;
+  font-family: 'Gochi Hand', cursive;
+  color: white;
+  border-radius: 15px;
+  padding: 8px;
+  /* background-color: #00b8e6;
     border: #f1f5f8;
     font-weight: bold;
       height: 28px;
       width: 28px;
-      border-radius: 50%;
+      border-radius: 50%; */
 }
-
 
 #newTodoButton:hover {
   background-color: #00ffc8;
-  }
+  color: black;
+  cursor: pointer;
+}
 
-  /*________________________Completed Label_________________________  */
+/*________________________Completed Label_________________________  */
 
- .completedLabel {
-   padding: 5px;
-   background-color: #adb5bb86;
-   border-radius: 20px;
- }
+.completedLabel {
+  padding: 10px;
+  background-color: #adb5bb86;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 2px 2px 0px 1px rgb(197, 197, 197);
+}
 
- .clearCompleted {
-   display: flex;
-   justify-content: flex-end;
-   align-content: center;
- }
+.clearCompleted {
+  display: inline-flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  background-color: #606161;
+  font-family: 'Gochi Hand', cursive;
+  color: white;
+  cursor: pointer;
+}
 
 /*________________________In Progress Label_________________________  */
 
- .progressLabel {
+.progressLabel {
   padding: 5px;
   background-color: #adb5bb86;
   border-radius: 20px;
@@ -97,4 +112,8 @@ margin: 20px;
 .decisionIcon {
   height: 20px;
   display: inline-block
+}
+
+.decisionIcon:hover{
+  cursor: pointer;
 }

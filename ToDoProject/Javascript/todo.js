@@ -1,7 +1,5 @@
 // default exports
-import {
-    bindTouch
-} from './utilities.js'
+import { bindTouch } from './utilities'
 
 let toDoList = [];
 
@@ -19,11 +17,7 @@ export default class Todo {
     listTodos() {
         let listItem = document.getElementById('List');
         toDoList.forEach(function(item){listItem.appendChild(buildTodo(item))})
-        
-
     }
-
-   
 
     addNewTodo() {
         let txtVal = document.getElementById('newTodo').value;
@@ -38,20 +32,23 @@ export default class Todo {
         //save to data store
         saveTodo(newTodo);
 
-        // list todos
         this.listTodos();
     }
 
-    removeTodo(id) {}
-
-    completeTodo() {}
-
 }
+
+// HELP HERE NEEDED
+
+// before I changed this it still did not work. I changed some things in my HTML so it is NOT WORKING!
 function buildTodo(todo) {
     let li = document.createElement('li');
     li.classList.add('items');
-    li.innerHTML = `<p>${todo.value}</p> <span><img class="decisionIcon"
-    src="https://img.icons8.com/dotty/80/000000/delete.png"><img class="decisionIcon"
-    src="https://img.icons8.com/carbon-copy/100/000000/checkmark.png"></span>`
+    li.innerHTML = `<p>${todo.value}</p> <span><img id="deleteTask" class="decisionIcon"
+    src="https://img.icons8.com/dotty/80/000000/delete.png">
+    <img id="editTask" class="decisionIcon"
+    src="https://img.icons8.com/carbon-copy/100/000000/edit--v1.png">
+    <img id="completedTask" class="decisionIcon"
+    src="https://img.icons8.com/carbon-copy/100/000000/checkmark.png">
+</span>`
     return li;
 }
