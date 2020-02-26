@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+
+.pokemonLineUp {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    font-family: 'Luckiest Guy';
+    font-size: large;
+    font-size: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: cornflowerblue;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* .previous {
+    display: flex;
+    justify-self: start;
+}
+.next {
+    display: flex;
+    justify-self: end;
+} */

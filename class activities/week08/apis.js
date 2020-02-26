@@ -4,7 +4,6 @@ const next = document.querySelector(".next");
 
 // previous.addEventListener("click", )
 
-
 function pokiFetch(url) {
     return fetch(url)
         .then((response) => {
