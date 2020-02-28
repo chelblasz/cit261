@@ -1,4 +1,6 @@
 let pokiDeck;
+const list = document.querySelector("ul");
+let detailsJson
 
 // previous.addEventListener("click", )
 
@@ -11,13 +13,12 @@ function pokiFetch(url) {
 }
 
 async function pokiDisplay(listed) {
-    const list = document.querySelector("ul");
     list.innerHTML = '';
     for (let i = 0; i < listed.length; i++) {
         let details = listed[i].url;
-        let detailsJson = await pokiFetch(details)
+        detailsJson = await pokiFetch(details)
         let sprite = detailsJson.sprites.front_default;
-        list.innerHTML += `<li><img src="${sprite}"><a>${listed[i].name}</a></li>`;
+        list.innerHTML += `<li><a class="details" onClick=""><img class="sprite" src="${sprite}">${listed[i].name}</a></li>`;
     }
 };
 
@@ -26,7 +27,16 @@ async function buildPage(url = 'https://pokeapi.co/api/v2/pokemon/') {
     console.log(pokiDeck.results)
     pokiDisplay(pokiDeck.results)
     console.log(pokiDeck);
-}
+};
+
+// async function detailDisplay(detail) {
+//     list.innerHTML = '';
+//     list.innerHTML += `
+//     <li>
+//         <div></div>
+//     </li>
+//     `;
+// }
 
 
 buildPage();
