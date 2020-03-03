@@ -17,6 +17,24 @@ li {
     padding: 10px;
     text-align: center;
     border-radius: 5px;
+    width: 97vw;
+}
+
+main {
+    display: flex;
+  flex-shrink: 0;
+  width: 100vw;
+  overflow: hidden;
+  /* vw - viewport window */
+}
+
+.showDetails {
+transform: translateX(-100vw);
+}
+
+#list, #showDetails {
+    width: 100vw;
+    transition: all .3s;
 }
 
 /* .previous {
