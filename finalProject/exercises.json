@@ -1,0 +1,100 @@
+{
+  "exercises": [
+    {
+      "type": "trapezius",
+      "target": "trapezius-side",
+      "name": "Upright Row",
+      "equiptment": true,
+      "description": "Stand slightly slanted forward, dumbbells at your sides, pull up like you are pulling a lawn mower cord at a perfect 45 degree angle and repeat."
+    },
+    {
+      "type": "trapezius",
+      "target": "trapezius-back",
+      "name": "Shoulder Blade Squeeze",
+      "equiptment": false,
+      "description": "In plank position slower lower and focus on squeezing your shoulder blades, once they kiss slowly straighten your arms and come back into plank and repeat."
+    },
+    {
+      "type": "trapezius",
+      "target": "trapezius-front",
+      "name": "behind-the-Head Press",
+      "equiptment": true,
+      "description": "Dumbbells verticle in hands with hands behind the head. slowly push arms into the air and slowly lower and kiss dumbbells to shoulders and repeat."
+    },
+    {
+        "type": "glutes",
+        "target": "glutes-side",
+        "name": "Weighted Cutsy Squat",
+        "equiptment": true,
+        "description": "with feet hip width apart remove weight from one foot and shift it back behind you, as you squat with 95% of your weight on front foot slowly drag or track foot behind in cursty stance (keep back-leg straight) and repeat with other leg."
+      },
+      {
+        "type": "glutes",
+        "target": "glutes-back",
+        "name": "Pistol Taps",
+        "equiptment": false,
+        "description": "With feet hip width apart and hands outstretched with hands forming a pistol, remove weight from one foot and shift it infront you, as you squat with 95% of your weight on one foot slowly drag or track foot infront further forward and repeat with other leg."
+      },
+      {
+        "type": "glutes",
+        "target": "glutes-back",
+        "name": "weighted Bird-Dog Pulses",
+        "equiptment": true,
+        "description": "In table top position raise opposite arm and leg off the mat. Once you have and even plan from the back of your hand to the underpart of your foot begin to pulse up coming back to that even plane before repeating the pulse."
+      },
+      {
+        "type": "obliques",
+        "target": [
+            "obliques-side",
+            "obliques-back",
+            "obliques-front"
+        ],
+        "name": "Side Plank Pulses",
+        "equiptment": false,
+        "description": "Side plank position is when you rest your weight on your folded arm and one leg on top of another once in a perfect 45 degree plane pulse your hips up and return back to 45 degree plane position. Refrain from pulsing your entire body."
+      },
+      {
+        "type": "obliques",
+        "target": [
+            "obliques-side",
+            "obliques-back",
+            "obliques-front"
+        ],
+        "name": "Verticle Leg-Lift",
+        "equiptment": false,
+        "description": "In standing position and feet hip width apart raise one leg to the side with foot flexed."
+      },
+      {
+        "type": "obliques",
+        "target": [
+            "obliques-side",
+            "obliques-back",
+            "obliques-front"
+        ],
+        "name": "Rolling Plank",
+        "equiptment": false,
+        "description": "Get into plank position, and roll all weight to the right and reach left arm up, return to plank position and roll to left and reach up with right hand. Continue until reps are complete"
+      },
+      {
+        "type": "abs",
+        "target": "abs-front",
+        "name": "Mason Twist",
+        "equiptment": false,
+        "description": "Sit at a 45 degree angle and lift feet together in a 90 degree angle. Once in position, clasp hands and alternate toucing the floor on either side of yourself while keeping feet elevated."
+      },
+      {
+        "type": "abs",
+        "target": "abs-front",
+        "name": "In-and-Outs",
+        "equiptment": false,
+        "description": "Start in plank position. With feet together jump them to your hands and back quickly. Each time you return to plank position that is one rep."
+      },
+      {
+        "type": "abs",
+        "target": "abs-front",
+        "name": "Supine Flutter Kicks",
+        "equiptment": false,
+        "description": "laying on your back gentle lift your head and upper chest off the ground and hold. Lift both feet off the ground just enough so that as you aternate small kicks you do not touch the ground. Instead of counting the kicks you will count in seconds."
+      }
+  ]
+}
