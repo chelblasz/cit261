@@ -1,4 +1,4 @@
-import {trapezius, booty, obliques, abs } from './exercises.js'
+// import {trapezius, booty, obliques, abs } from './exercises.js'
 
 document.querySelector('#bodyBack').addEventListener('click', (e) => {
     e.preventDefault();
@@ -7,13 +7,9 @@ document.querySelector('#bodyBack').addEventListener('click', (e) => {
 });
 
 function listElements() {
-    //change all array elements in to a list of strings? 
-
-    // load the fetch into memory
-    //put fetch inside function
-    booty.toString()//do not need this
-    let article = document.createElement('article');
-    article.appendChild(h2);
+    let section = document.createElement('section');
+    section.appendChild(h2);
+    console.log(e.target);
 }
 
 // 

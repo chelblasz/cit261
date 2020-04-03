@@ -1,3 +1,9 @@
-.traps {
+h1 {
 border: 5px solid green;
+display: flex;
+justify-content: center;
+}
+
+#exerciseList {
+    border: 5px solid blue
 }
