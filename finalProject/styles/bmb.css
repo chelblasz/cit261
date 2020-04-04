@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Comic+Neue&display=swap');
+
+body {
+font-family: 'Comic Neue', cursive;
+}
+
 h1 {
 border: 5px solid green;
 display: flex;
@@ -5,5 +11,15 @@ justify-content: center;
 }
 
 #exerciseList {
-    border: 5px solid blue
+    border: 5px solid blue;
+    line-height: 1.5em;
+}
+
+#delete {
+    width: 90px;
+    border-radius: 5px;
+    background-color: red;
+    border: none;
+    color: white;
+    font: bold;
 }
