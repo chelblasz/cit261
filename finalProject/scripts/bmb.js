@@ -24,7 +24,7 @@ function renderEx(modify) {
     let eList = document.querySelector("#exerciseList");
     eList.innerHTML += `
         <div>
-            ${modify.target}
+        <div class="target">${modify.target}</div>
             <div>${modify.name}</div>
             <div>${modify.equipment}</div>
             <div>${modify.description}</div>
@@ -45,11 +45,9 @@ function getExercises() {
         });
 }
 
-function deleteList(){
-    document.querySelector('#delete').addEventListener('click', (e) => {
-    document.querySelector('#exerciseList').innerHTML = '';
-    });
-}
+document.querySelector("#delete").addEventListener("click", e => {
+document.querySelector("#exerciseList").innerHTML = "";
+});
 
 getExercises();
 
